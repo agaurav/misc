@@ -34,13 +34,13 @@ make_attr () {
 
 for gdep in $GO_DEPS; do
 	if [ -f $gdep/LICENSE ];then
-        make_attr $gdep LICENSE
+        	make_attr $gdep LICENSE
 	else
 		if [ -f $gdep/LICENSE.txt ];then
-            make_attr $gdep LICENSE.txt
+            		make_attr $gdep LICENSE.txt
 		else
 			if [ -f $gdep/NOTICE ];then
-                make_attr $gdep NOTICE
+                		make_attr $gdep NOTICE
 			fi;
 		fi;
 	fi;
